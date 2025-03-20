@@ -1,0 +1,6 @@
+backend:
+cp healthack2025-fishio\backend\fishio-3fd75-firebase-adminsdk-fbsvc-9be5be22bb.json
+cp healthack2025-fishio\backend\.env
+npm install
+nodemon app.js
+http://localhost:3000

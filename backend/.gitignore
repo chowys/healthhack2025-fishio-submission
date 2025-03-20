@@ -1,0 +1,23 @@
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# Build output
+.next/
+dist/
+
+# Optional: OS/IDE-specific files
+.DS_Store
+.vscode/
+
+# Firebase Admin SDK key
+fishio-3fd75-firebase-adminsdk-fbsvc-9be5be22bb.json
+
+.next*

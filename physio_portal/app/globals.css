@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --primary: #075540;
+  --secondary: #000000;
+  --customGrey: #5A5A5A;
+  --customGrey2: #393939;
+  --lightGrey: #D3D3D3;
+  --customOverlay: #00000080;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+.customH1 {
+  font-size: 20;
+  font-weight: bold;
+  color: black;
+}
+
+.customMenuWord{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+}
+
+.customHeaderNavigation{
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 1.15rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.customHeaderNavigation:hover {
+  color: #075540;
+  scale: 1.1;
+}
+
+.customDashBoardCardBttn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem; /* 18px */
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  background-color: #075540;
+}
+
+.customDashBoardCardBttn:hover {
+  background-color: #0c8162;
+}
+
+.customSidePanelButton{
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 1.5rem; /* 18px */
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+  gap: 0.5rem;
+  /* transition-duration: 500ms;
+  transition-property: var(--background), var(--color); */
+  border-radius: 5px;
+}
+
+.customSidePanelButton:hover {
+  background-color: #075540;
+  color: white;
+}
+
+button {
+  cursor: pointer;
+  color: black;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;  
+}
+
+button:hover {
+  background-color: #f1f1f1;
+}
+
+.customButton {
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+  background-color: #075540;
+  transition: background-color 0.3s ease-in-out;  
+}
+
+.customButton:hover {
+  background-color: black;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl; /* Rotate text vertically (right to left) */
+  text-orientation: mixed;
+  transform: rotate(180deg); /* Flip text if needed */
+}
